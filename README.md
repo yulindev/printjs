@@ -1,9 +1,9 @@
-## printjs 打印使用
+### printjs 打印使用
 
-#### 需使用ref获取dom节点，若直接通过id或class获取则webpack打包部署后打印内容为空
+##### 注意：需使用ref获取dom节点，若直接通过id或class获取则webpack打包部署后打印内容为空
 
 ```js
-import Print from '@/utils/print'
+import Print from '@/utils/print' // 引入
 Vue.use(Print) // 注册
 ```
 ```html
@@ -17,7 +17,7 @@ Vue.use(Print) // 注册
 ```js
 this.$print(this.$refs.print) // 使用
 ```
-#### 自定义类名
+##### 自定义类名
 ```html
 <template>
 	<div ref="print">
